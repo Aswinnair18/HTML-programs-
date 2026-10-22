@@ -15,7 +15,7 @@
   <div id="calendar"></div>
 
   <script>
-    const year = parseInt(prompt("Enter the year (e.g. 2026):"), 10);
+    const year = parseInt(prompt("Enter the year (e.g. ):"), 10);
 
     if (!year || year < 1) {
       document.body.innerHTML = "<p>Invalid year entered.</p>";
@@ -46,7 +46,7 @@
 
         // Assemble the table
         html += `<table>
-          <caption>${month} ${year}</caption>
+          <caption>${month} </caption>
           <tr>${days.map(d => `<th>${d}</th>`).join("")}</tr>
           ${rows}
         </table>`;
